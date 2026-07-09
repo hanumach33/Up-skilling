@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        button { margin-top: 15px; padding: 10px 20px; }
+        output {
+            display: block;
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event Registration</h1>
+
+    <form oninput="regOutput.value = 'Thanks, ' + name.value + '! You are registered for ' + eventType.value + '.'">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" autofocus required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="eventType">Event Type</label>
+        <select id="eventType" name="eventType" required>
+            <option value="">Select an event</option>
+            <option value="Summer Festival">Summer Festival</option>
+            <option value="Farmers Market">Farmers Market</option>
+            <option value="Community Parade">Community Parade</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Any special requests?"></textarea>
+
+        <button type="submit">Register</button>
+        <output name="regOutput" for="name eventType"></output>
+    </form>
+
+</body>
+</html>
