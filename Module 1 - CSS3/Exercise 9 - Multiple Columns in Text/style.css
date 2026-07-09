@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 30px;
+}
+
+.newsArticle {
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsArticle h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.newsArticle p {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px;
+}
