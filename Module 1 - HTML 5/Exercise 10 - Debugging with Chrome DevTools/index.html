@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging with Chrome DevTools</title>
+    <style>
+        .box {
+            padding: 15px;
+            background-color: lightblue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Debugging Practice</h1>
+    <div class="box" id="counterBox">Click count: <span id="count">0</span></div>
+    <button onclick="incrementCount()">Click Me</button>
+
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+            count = count + 1;
+            console.log("Button clicked, count is now:", count);
+            document.getElementById('count').textContent = count;
+        }
+    </script>
+
+</body>
+</html>
