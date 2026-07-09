@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 450px; margin: 20px auto; }
+        label { display: block; margin-top: 12px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+        .enlarged { width: 300px !important; }
+        #charCount { font-size: 0.9em; color: gray; }
+    </style>
+</head>
+<body>
+
+    <h1>Event Feedback</h1>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" placeholder="e.g. 9876543210"
+           onblur="validatePhone()">
+    <p id="phoneMsg"></p>
+
+    <label for="feeEvent">Select Event</label>
+    <select id="feeEvent" onchange="showFee()">
+        <option value="">Choose an event</option>
+        <option value="200">Summer Festival - ₹200</option>
+        <option value="0">Farmers Market - Free</option>
+        <option value="150">Community Parade - ₹150</option>
+    </select>
+    <p id="feeMsg"></p>
+
+    <label for="feedback">Your Feedback</label>
+    <textarea id="feedback" rows="4" onkeyup="countChars()"></textarea>
+    <p id="charCount">Characters: 0</p>
+
+    <button onclick="confirmSubmit()">Submit Feedback</button>
+    <p id="confirmMsg"></p>
+
+    <h3>Event Photo (double-click to enlarge)</h3>
+    <img id="eventImg" src="https://via.placeholder.com/150x100?text=Event"
+         alt="Event photo" ondblclick="enlargeImage()">
+
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById('phone').value;
+            const msg = document.getElementById('phoneMsg');
+            if (/^\d{10}$/.test(phone)) {
+                msg.textContent = "Phone number looks valid.";
+                msg.style.color = "green";
+            } else {
+                msg.textContent = "Please enter a valid 10-digit phone number.";
+                msg.style.color = "red";
+            }
+        }
+
+        function showFee() {
+            const select = document.getElementById('feeEvent');
+            const fee = select.value;
+            document.getElementById('feeMsg').textContent =
+                fee === "" ? "" : "Fee for this event: ₹" + fee;
+        }
+
+        function confirmSubmit() {
+            document.getElementById('confirmMsg').textContent =
+                "Thank you! Your feedback has been submitted.";
+        }
+
+        function enlargeImage() {
+            document.getElementById('eventImg').classList.toggle('enlarged');
+        }
+
+        function countChars() {
+            const text = document.getElementById('feedback').value;
+            document.getElementById('charCount').textContent = "Characters: " + text.length;
+        }
+    </script>
+
+</body>
+</html>
