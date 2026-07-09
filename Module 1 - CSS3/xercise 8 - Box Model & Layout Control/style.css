@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #0d47a1;
+}
+
+.eventCard {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #1976d2;
+    outline: 2px dashed #ff9800;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.eventCard h2 {
+    color: #1976d2;
+}
+
+.eventCard p {
+    color: #555555;
+}
+
+input {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    border: 2px solid #1976d2;
+    outline: 3px solid #ff9800;
+}
+
+.hiddenBox {
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #bbdefb;
+    text-align: center;
+    visibility: hidden;
+}
+
+.noneBox {
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffcdd2;
+    text-align: center;
+    display: none;
+}
