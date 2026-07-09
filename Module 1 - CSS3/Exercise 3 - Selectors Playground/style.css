@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+h2 {
+    color: #1565c0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#mainHeader {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.eventCard {
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+}
+
+h3,
+p {
+    color: #444444;
+    margin-bottom: 10px;
+}
