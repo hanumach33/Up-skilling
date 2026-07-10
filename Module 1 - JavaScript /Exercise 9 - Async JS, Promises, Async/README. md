@@ -1,0 +1,21 @@
+Exercise 9 - Async JS, Promises, Async/Await
+
+Objective
+
+Fetch event data using asynchronous JavaScript.
+
+Scenario
+
+Fetch event data from a mock API and display it on the webpage.
+
+Tasks
+
+- Fetch events from a mock JSON endpoint.
+- Use `.then()` and `.catch()` to handle the response.
+- Rewrite the same functionality using `async/await`.
+- Display a loading message while fetching data.
+
+Files
+
+- index.html
+- main.js
