@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Forms</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container my-5">
+
+        <h1 class="text-center text-primary mb-5">
+            Local Community Event Portal
+        </h1>
+
+        <div class="card mb-5 shadow">
+
+            <div class="card-header bg-primary text-white">
+                Event Registration
+            </div>
+
+            <div class="card-body">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">+91</span>
+                            <input type="tel" class="form-control" placeholder="9876543210">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Select Event</label>
+
+                        <select class="form-select">
+                            <option selected>Select an Event</option>
+                            <option>Music Festival</option>
+                            <option>Food Carnival</option>
+                            <option>Coding Workshop</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms">
+                        <label class="form-check-label" for="terms">
+                            I agree to the Terms and Conditions
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary">
+                        Register
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="card shadow">
+
+            <div class="card-header bg-success text-white">
+                Login Form
+            </div>
+
+            <div class="card-body">
+
+                <form>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <button class="btn btn-success">
+                        Login
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
