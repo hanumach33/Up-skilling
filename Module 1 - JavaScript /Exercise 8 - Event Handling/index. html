@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Event Handling</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        #eventContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+            padding: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Local Community Event Portal</h1>
+
+    <div class="controls">
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search Event">
+
+        <select id="categoryFilter">
+            <option value="All">All</option>
+            <option value="Music">Music</option>
+            <option value="Food">Food</option>
+            <option value="Education">Education</option>
+        </select>
+
+    </div>
+
+    <div id="eventContainer"></div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
