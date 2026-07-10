@@ -1,0 +1,14 @@
+using System;
+
+namespace Exercise1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+            Console.WriteLine("C# Development Environment is Successfully Configured.");
+        }
+    }
+}
