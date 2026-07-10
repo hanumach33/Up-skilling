@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - DOM Manipulation</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Local Community Event Portal</h1>
+
+    <form id="eventForm">
+
+        <input
+            type="text"
+            id="eventName"
+            placeholder="Enter Event Name"
+            required>
+
+        <button type="submit">
+            Add Event
+        </button>
+
+    </form>
+
+    <button id="removeAll">
+        Remove All
+    </button>
+
+    <ul id="eventList"></ul>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
