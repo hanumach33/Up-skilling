@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Bootstrap Structure and Files</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <h1 class="text-primary mb-4">
+            Local Community Event Portal
+        </h1>
+
+        <button
+            class="btn btn-success"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#eventInfo"
+            aria-expanded="false"
+            aria-controls="eventInfo">
+            Show Event Details
+        </button>
+
+        <div class="collapse mt-3" id="eventInfo">
+
+            <div class="card card-body">
+                Bootstrap JavaScript Bundle is successfully integrated. This content can be expanded and collapsed using Bootstrap's JavaScript plugin.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
